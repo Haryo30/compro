@@ -1,3 +1,12 @@
+@media screen and (max-width: 1000px) {
+  #hero {
+    padding-top: 80px;
+  }
+
+  .navbar {
+    background-color: #007245;
+  }
+}
 @media screen and (max-width: 922px) {
   .input-cari .button-primary {
     width: 120px;
@@ -28,10 +37,6 @@
     margin-top: 42px;
   }
 
-  .see-all {
-    width: 250px;
-  }
-
   .card-contact h2 {
     font-size: 32px;
     line-height: 42px;
@@ -53,18 +58,18 @@
     font-size: 34px;
   }
 
-  .card-contact h2 {
-    font-size: 25px;
-    line-height: 42px;
-    margin-bottom: 21px;
-  }
-
   .sub-title {
     font-size: 16px;
   }
 
   .card-layanan {
     margin: 15px 0;
+  }
+
+  .card-contact h2 {
+    font-size: 22px;
+    line-height: 42px;
+    margin-bottom: 21px;
   }
 
   #search h2 {

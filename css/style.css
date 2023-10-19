@@ -5,6 +5,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3fff4;
+  width: 100%;
+  height: 100%;
 }
 
 /* Narbar Style */
@@ -21,7 +23,7 @@ body {
 }
 
 .bg-transparant {
-  /* transition: all ease-in 0.3s; */
+  transition: all ease-in 0.3s;
 }
 
 * {
@@ -335,7 +337,8 @@ h2 {
 /* Card Fasilitas */
 
 .button-fitur {
-  width: 238px;
+  width: 100%;
+  max-width: 238px;
   height: 63px;
   background-color: var(--pr-color);
   border: none;
@@ -425,7 +428,6 @@ h2 {
   font-size: 40px;
   line-height: 60px;
   color: #fff;
-  width: 441px;
 }
 
 #contact h6 {

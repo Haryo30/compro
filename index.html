@@ -132,7 +132,7 @@
 
         <div class="row mt-5">
           <div class="col-md-4 text-center">
-            <div class="card-layanan">
+            <div class="card-layanan" onclick="openOnGoing()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/Property Baru-icon.png"
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="col-md-4 text-center">
-            <div class="card-layanan">
+            <div class="card-layanan" onclick="openOnGoing()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/sewarumah-icon.png"
@@ -164,7 +164,7 @@
             </div>
           </div>
           <div class="col-md-4 text-center">
-            <div class="card-layanan">
+            <div class="card-layanan" onclick="openOnGoing()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/beli rumah-icon.png"
@@ -700,7 +700,15 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+      const onGoing = document.getElementById("on-going")
+      function openOnGoing() {
+        onGoing.classList.add("open-popup")
+      }
+      function closeOnGoing() {
+        onGoing.classList.remove("open-popup")
+      }
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

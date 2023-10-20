@@ -7,3 +7,18 @@ window.addEventListener('scroll', function () {
         navbar.classList.replace('nav-color', 'bg-transparant')
     }
 });
+
+const cardLayanan = document.getElementById("card-layanan");
+const onGoing = document.getElementById("on-going");
+function openOnGoing() {
+    onGoing.style.display = "flex";
+    onGoing.style.transform = "scale(1)";
+    onGoing.style.visibility = "visible";
+    onGoing.style.opacity = "1";
+}
+function closeOnGOing() {
+    onGoing.style.display = "none";
+    onGoing.style.transform = "scale(0)";
+    onGoing.style.visibility = "hidden";
+    onGoing.style.opacity = "0";
+}

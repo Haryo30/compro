@@ -9,6 +9,41 @@ body {
   height: 100%;
 }
 
+.content {
+  position: relative;
+}
+
+.full-screen {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #007245;
+  z-index: 10;
+  width: 80%;
+  height: 350px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+#on-going {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: sticky;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+
 /* Narbar Style */
 
 .navbar {
@@ -128,7 +163,7 @@ h2 {
   color: #000;
 }
 
-.card-layanan {
+#card-layanan {
   width: 100%;
   height: 313px;
   border-radius: 5px;
@@ -148,14 +183,14 @@ h2 {
   transition: all 0.1s ease-in;
 }
 
-.card-layanan h3 {
+#card-layanan h3 {
   color: var(--pr-color);
   font-size: 24px;
 
   transition: all 0.2s ease-in;
 }
 
-.card-layanan p {
+#card-layanan p {
   color: #000;
   font-size: 14px;
 
@@ -164,7 +199,7 @@ h2 {
 
 /* Hover */
 
-.card-layanan:hover {
+#card-layanan:hover {
   width: 100%;
   height: 313px;
   border-radius: 5px;
@@ -174,7 +209,7 @@ h2 {
   transition: all 0.2s ease-in;
 }
 
-.card-layanan:hover .circle-icon {
+#card-layanan:hover .circle-icon {
   background-color: #fff;
   transition: all 0.2 ease-in;
 }
@@ -188,14 +223,14 @@ h2 {
   transition: all 0.2s ease-in;
 }
 
-.card-layanan:hover h3 {
+#card-layanan:hover h3 {
   color: #fff;
   font-size: 24px;
 
   transition: all 0.2s ease-in;
 }
 
-.card-layanan:hover p {
+#card-layanan:hover p {
   color: #fff;
   font-size: 14px;
 

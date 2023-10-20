@@ -79,9 +79,9 @@
           </ul>
 
           <!-- <div>
-            <button class="button-primary">Daftar</button>
-            <button class="button-secondary">Masuk</button>
-          </div> -->
+              <button class="button-primary">Daftar</button>
+              <button class="button-secondary">Masuk</button>
+            </div> -->
         </div>
       </div>
     </nav>
@@ -132,7 +132,7 @@
 
         <div class="row mt-5">
           <div class="col-md-4 text-center">
-            <div class="card-layanan" onclick="openOnGoing()">
+            <div id="card-layanan" onclick="openOnGoing()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/Property Baru-icon.png"
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="col-md-4 text-center">
-            <div class="card-layanan" onclick="openOnGoing()">
+            <div id="card-layanan" onclick="openOnGoing()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/sewarumah-icon.png"
@@ -164,7 +164,7 @@
             </div>
           </div>
           <div class="col-md-4 text-center">
-            <div class="card-layanan" onclick="openOnGoing()">
+            <div id="card-layanan" onclick="openOnGoing()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/beli rumah-icon.png"
@@ -185,65 +185,34 @@
 
     <!-- Seacrh Section -->
     <!-- <section id="search" class="d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>Temukan Rumah Impian</h2>
-            <p>sekarang Anda dapat menghemat semua hal stres, waktu dan biaya
-              tersembunyi, dengan ratusan rumah untuk anda</p>
-          </div>
-
-          <div class="col-10 mx-auto mt-5">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#jual" type="button" role="tab" aria-controls="home" aria-selected="true">
-                  Jual
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sewa" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                  Sewa
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#propertybaru" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                  Property Baru
-                </button>
-              </li>
-            </ul>
-    
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="jual" role="tabpanel" aria-labelledby="home-tab"> -->
-
-    <!-- Dropdown Tipe Rumah -->
-    <!-- <div class="input-group input-cari mb-3">
-                  <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="Assets/img/Home Icon.png" class="d-block d-lg-inline mx-auto"/> Tipe Rumah </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                  </ul> -->
-    <!-- Dropdown Range Harga -->
-    <!-- <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="Assets/img/range-icon.png" class="d-block d-lg-inline mx-auto"/> Range Harga </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li> <a class="dropdown-item" href="#">Something else here</a> </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Temukan Rumah Impian</h2>
+              <p>sekarang Anda dapat menghemat semua hal stres, waktu dan biaya
+                tersembunyi, dengan ratusan rumah untuk anda</p>
+            </div>
+  
+            <div class="col-10 mx-auto mt-5">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#jual" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    Jual
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sewa" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    Sewa
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#propertybaru" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                    Property Baru
+                  </button>
+                </li>
               </ul>
-                  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="cari berdasarkan lokasi, ID, Property"/>
-                  <button class="button-primary" type="button" id="button-addon2">Cari</button>
-                </div>
-    
-              
-              </div>
-              <div class="tab-pane fade" id="sewa" role="tabpanel" aria-labelledby="profile-tab">
-                
+      
+              <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="jual" role="tabpanel" aria-labelledby="home-tab"> -->
 
     <!-- Dropdown Tipe Rumah -->
@@ -257,9 +226,10 @@
                       <li><hr class="dropdown-divider" /></li>
                       <li><a class="dropdown-item" href="#">Separated link</a></li>
                     </ul> -->
+
     <!-- Dropdown Range Harga -->
     <!-- <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="Assets/img/range-icon.png" /> Range Harga </button>
+                  <img src="Assets/img/range-icon.png" class="d-block d-lg-inline mx-auto"/> Range Harga </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -273,47 +243,79 @@
       
                 
                 </div>
-
-              </div>
-              <div class="tab-pane fade" id="propertybaru" role="tabpanel" aria-labelledby="contact-tab">
-                
-                <div class="tab-pane fade show active" id="jual" role="tabpanel" aria-labelledby="home-tab"> -->
+                <div class="tab-pane fade" id="sewa" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="tab-pane fade show active" id="jual" role="tabpanel" aria-labelledby="home-tab"> -->
 
     <!-- Dropdown Tipe Rumah -->
     <!-- <div class="input-group input-cari mb-3">
-                    <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="Assets/img/Home Icon.png" class="d-block d-lg-inline mx-auto"/> Tipe Rumah </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul> -->
+                      <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="Assets/img/Home Icon.png" class="d-block d-lg-inline mx-auto"/> Tipe Rumah </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul> -->
+
     <!-- Dropdown Range Harga -->
     <!-- <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="Assets/img/range-icon.png" /> Range Harga </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li> <a class="dropdown-item" href="#">Something else here</a> </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="cari berdasarkan lokasi, ID, Property"/>
-                    <button class="button-primary" type="button" id="button-addon2">Cari</button>
+                    <img src="Assets/img/range-icon.png" /> Range Harga </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li> <a class="dropdown-item" href="#">Something else here</a> </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="cari berdasarkan lokasi, ID, Property"/>
+                      <button class="button-primary" type="button" id="button-addon2">Cari</button>
+                    </div>
+        
+                  
                   </div>
-    
+  
+                </div>
+                <div class="tab-pane fade" id="propertybaru" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <div class="tab-pane fade show active" id="jual" role="tabpanel" aria-labelledby="home-tab"> -->
+
+    <!-- Dropdown Tipe Rumah -->
+    <!-- <div class="input-group input-cari mb-3">
+                      <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="Assets/img/Home Icon.png" class="d-block d-lg-inline mx-auto"/> Tipe Rumah </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul> -->
+
+    <!-- Dropdown Range Harga -->
+    <!-- <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="Assets/img/range-icon.png" /> Range Harga </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li> <a class="dropdown-item" href="#">Something else here</a> </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="cari berdasarkan lokasi, ID, Property"/>
+                      <button class="button-primary" type="button" id="button-addon2">Cari</button>
+                    </div>
+      
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
+      </section> -->
 
     <!-- Rekomendasi Section -->
-
     <section id="rekomendasi">
       <div class="container">
         <div class="row mb-5">
@@ -404,86 +406,86 @@
             </div>
           </div>
           <!-- <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
-            <div class="card p-2" style="width: 22rem">
-              <img src="Assets/img/sample photos.jpg" alt="" />
-              <div class="card-body">
-                <h4>IDR.200.000.000</h4>
-                <p class="mb-4 lh-sm">
-                  Jl. Babelan Raya No.1 <br />
-                  <span class="text-danger">Sewa</span>
-                </p>
-              </div>
-
-              <div class="card-fasilitas d-flex justify-content-between px-4">
-                <span>
-                  <img src="Assets/img/Icon Kamar Tidur.png" alt="" /> 3
-                  <p>Kamar Tidur</p>
-                </span>
-                <span>
-                  <img src="Assets/img/Icon Kamar Mandi.png" alt="" /> 4
-                  <p>Kamar Mandi</p>
-                </span>
-                <span>
-                  <img src="Assets/img/Icon Luas Tanah.png" alt="" /> 3
-                  <p>Luas Tanah</p>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
-            <div class="card p-2" style="width: 22rem">
-              <img src="Assets/img/sample photos.jpg" alt="" />
-              <div class="card-body">
-                <h4>IDR.200.000.000</h4>
-                <p class="mb-4 lh-sm">
-                  Jl. Babelan Raya No.1 <br />
-                  <span class="text-danger">Sewa</span>
-                </p>
-              </div>
-
-              <div class="card-fasilitas d-flex justify-content-between px-4">
-                <span>
-                  <img src="Assets/img/Icon Kamar Tidur.png" alt="" /> 3
-                  <p>Kamar Tidur</p>
-                </span>
-                <span>
-                  <img src="Assets/img/Icon Kamar Mandi.png" alt="" /> 4
-                  <p>Kamar Mandi</p>
-                </span>
-                <span>
-                  <img src="Assets/img/Icon Luas Tanah.png" alt="" /> 3
-                  <p>Luas Tanah</p>
-                </span>
+              <div class="card p-2" style="width: 22rem">
+                <img src="Assets/img/sample photos.jpg" alt="" />
+                <div class="card-body">
+                  <h4>IDR.200.000.000</h4>
+                  <p class="mb-4 lh-sm">
+                    Jl. Babelan Raya No.1 <br />
+                    <span class="text-danger">Sewa</span>
+                  </p>
+                </div>
+  
+                <div class="card-fasilitas d-flex justify-content-between px-4">
+                  <span>
+                    <img src="Assets/img/Icon Kamar Tidur.png" alt="" /> 3
+                    <p>Kamar Tidur</p>
+                  </span>
+                  <span>
+                    <img src="Assets/img/Icon Kamar Mandi.png" alt="" /> 4
+                    <p>Kamar Mandi</p>
+                  </span>
+                  <span>
+                    <img src="Assets/img/Icon Luas Tanah.png" alt="" /> 3
+                    <p>Luas Tanah</p>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
-            <div class="card p-2" style="width: 22rem">
-              <img src="Assets/img/sample photos.jpg" alt="" />
-              <div class="card-body">
-                <h4>IDR.200.000.000</h4>
-                <p class="mb-4 lh-sm">
-                  Jl. Babelan Raya No.1 <br />
-                  <span class="text-danger">Sewa</span>
-                </p>
-              </div>
-
-              <div class="card-fasilitas d-flex justify-content-between px-4">
-                <span>
-                  <img src="Assets/img/Icon Kamar Tidur.png" alt="" /> 3
-                  <p>Kamar Tidur</p>
-                </span>
-                <span>
-                  <img src="Assets/img/Icon Kamar Mandi.png" alt="" /> 4
-                  <p>Kamar Mandi</p>
-                </span>
-                <span>
-                  <img src="Assets/img/Icon Luas Tanah.png" alt="" /> 3
-                  <p>Luas Tanah</p>
-                </span>
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+              <div class="card p-2" style="width: 22rem">
+                <img src="Assets/img/sample photos.jpg" alt="" />
+                <div class="card-body">
+                  <h4>IDR.200.000.000</h4>
+                  <p class="mb-4 lh-sm">
+                    Jl. Babelan Raya No.1 <br />
+                    <span class="text-danger">Sewa</span>
+                  </p>
+                </div>
+  
+                <div class="card-fasilitas d-flex justify-content-between px-4">
+                  <span>
+                    <img src="Assets/img/Icon Kamar Tidur.png" alt="" /> 3
+                    <p>Kamar Tidur</p>
+                  </span>
+                  <span>
+                    <img src="Assets/img/Icon Kamar Mandi.png" alt="" /> 4
+                    <p>Kamar Mandi</p>
+                  </span>
+                  <span>
+                    <img src="Assets/img/Icon Luas Tanah.png" alt="" /> 3
+                    <p>Luas Tanah</p>
+                  </span>
+                </div>
               </div>
             </div>
-          </div> -->
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+              <div class="card p-2" style="width: 22rem">
+                <img src="Assets/img/sample photos.jpg" alt="" />
+                <div class="card-body">
+                  <h4>IDR.200.000.000</h4>
+                  <p class="mb-4 lh-sm">
+                    Jl. Babelan Raya No.1 <br />
+                    <span class="text-danger">Sewa</span>
+                  </p>
+                </div>
+  
+                <div class="card-fasilitas d-flex justify-content-between px-4">
+                  <span>
+                    <img src="Assets/img/Icon Kamar Tidur.png" alt="" /> 3
+                    <p>Kamar Tidur</p>
+                  </span>
+                  <span>
+                    <img src="Assets/img/Icon Kamar Mandi.png" alt="" /> 4
+                    <p>Kamar Mandi</p>
+                  </span>
+                  <span>
+                    <img src="Assets/img/Icon Luas Tanah.png" alt="" /> 3
+                    <p>Luas Tanah</p>
+                  </span>
+                </div>
+              </div>
+            </div> -->
         </div>
       </div>
     </section>
@@ -591,7 +593,6 @@
     </section>
 
     <!-- Contact Section -->
-
     <section id="contact">
       <div class="container-fluid overlay h-100">
         <div class="container">
@@ -671,24 +672,24 @@
       <div class="container-fluid">
         <div class="container">
           <!-- <div class="row">
-            <div
-              class="col-md-7 d-flex align-items-center justify-content-lg-start justify-content-center"
-            >
-              <img
-                src="Assets/img/Screenshot_2023-10-18_084315-removebg-preview.png"
-                alt=""
-                width="235"
-              />
-            </div>
-            <div
-              class="col-md-5 d-flex justify-content-evenly justify-content-center"
-            >
-              <a href="#hero">Beranda</a>
-              <a href="#layanan">Layanan</a>
-              <a href="#fitur">Fitur</a>
-              <a href="#contact">Kontak</a>
-            </div>
-          </div> -->
+              <div
+                class="col-md-7 d-flex align-items-center justify-content-lg-start justify-content-center"
+              >
+                <img
+                  src="Assets/img/Screenshot_2023-10-18_084315-removebg-preview.png"
+                  alt=""
+                  width="235"
+                />
+              </div>
+              <div
+                class="col-md-5 d-flex justify-content-evenly justify-content-center"
+              >
+                <a href="#hero">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#fitur">Fitur</a>
+                <a href="#contact">Kontak</a>
+              </div>
+            </div> -->
           <div
             class="row position-absolute copyright start-50 translate-middle"
           >
@@ -700,17 +701,13 @@
       </div>
     </footer>
 
-    <script src="js/script.js">
-      const onGoing = document.getElementById("on-going")
-      function openOnGoing() {
-        onGoing.classList.add("open-popup")
-      }
-      function closeOnGoing() {
-        onGoing.classList.remove("open-popup")
-      }
-    </script>
+    <!-- On Going -->
+    <div id="on-going" onclick="closeOnGOing()">
+      <div class="full-screen">Still On Going...</div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

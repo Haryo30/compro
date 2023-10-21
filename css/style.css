@@ -14,19 +14,33 @@ body {
 }
 
 .full-screen {
-  background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   font-size: 30px;
   font-weight: bolder;
   color: #007245;
+  padding: 20px;
   z-index: 10;
   width: 80%;
-  height: 350px;
+  height: 300px;
   border-radius: 30px;
   background-color: #ffffff;
+}
+
+.exit {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  z-index: 10;
+}
+
+.going {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #on-going {
@@ -496,7 +510,7 @@ h2 {
 
 .card-contact {
   width: 100%;
-  height: 445px;
+  height: auto;
   background-color: #fff;
   border-radius: 5px;
   padding: 52px 48px;

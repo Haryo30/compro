@@ -7,6 +7,16 @@
     background-color: #007245;
   }
 }
+@media screen and (max-width: 992px) {
+  #card-layanan {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #card-layanan {
+    height: 313px;
+  }
+}
 @media screen and (max-width: 922px) {
   .input-cari .button-primary {
     width: 120px;
@@ -31,8 +41,6 @@
   }
 
   .card-contact {
-    width: 100%;
-    height: auto;
     padding: 52px 48px;
     margin-top: 42px;
   }
@@ -64,6 +72,10 @@
 
   #card-layanan {
     margin: 15px 0;
+  }
+
+  .exit img {
+    width: 40px;
   }
 
   .card-contact h2 {

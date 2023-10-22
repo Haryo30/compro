@@ -13,35 +13,7 @@ body {
   position: relative;
 }
 
-.full-screen {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  font-weight: bolder;
-  color: #007245;
-  padding: 20px;
-  z-index: 10;
-  width: 80%;
-  height: 300px;
-  border-radius: 30px;
-  background-color: #ffffff;
-}
-
-.exit {
-  position: relative;
-  text-align: right;
-  width: 100%;
-  z-index: 10;
-}
-
-.going {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
+/* On-going Modal */
 
 #on-going {
   display: none;
@@ -52,10 +24,79 @@ body {
   align-items: center;
   justify-content: center;
   transform: scale(0);
-  transition: all 1s;
+  transition: all 1s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100vh;
+}
+
+.full-screen {
+  position: absolute;
+  color: #007245;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.exit {
+  position: absolute;
+  top: 1;
+  text-align: right;
+  width: 95%;
+  z-index: 20;
+}
+
+.exit img {
+  width: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.going {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+}
+
+/* Property Slider */
+
+#property-modal {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: sticky;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+
+.full-screen {
+  position: absolute;
+  color: #007245;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Narbar Style */
@@ -401,6 +442,16 @@ h2 {
   font-size: 500;
 }
 
+.card-fitur {
+  width: 100%;
+  height: 100%;
+}
+
+.card-fitur img {
+  width: 100%;
+  height: 100%;
+}
+
 .card-fitur h5 {
   color: #fff;
   font-size: 36px;
@@ -444,7 +495,7 @@ h2 {
   border-radius: 50%;
   width: 71px;
   height: 71px;
-  background-color: var(--pr-color);
+  background-color: rgb(4, 136, 83, 0.3);
   padding: 0;
 }
 
@@ -453,7 +504,7 @@ h2 {
   border-radius: 50%;
   width: 71px;
   height: 71px;
-  background-color: var(--pr-color);
+  background-color: rgb(4, 136, 83, 0.3);
   padding: 0;
 }
 

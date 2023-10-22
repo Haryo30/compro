@@ -74,6 +74,14 @@
     margin: 15px 0;
   }
 
+  .going {
+    font-size: 25px;
+  }
+
+  .exit {
+    width: 85%;
+  }
+
   .exit img {
     width: 40px;
   }

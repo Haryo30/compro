@@ -132,7 +132,7 @@
 
         <div class="row mt-5">
           <div class="col-md-4 text-center">
-            <div id="card-layanan" onclick="openOnGoing()">
+            <div id="card-layanan" onclick="openSlider()">
               <div class="circle-icon position-relative mx-auto">
                 <img
                   src="Assets/img/Property Baru-icon.png"
@@ -705,12 +705,48 @@
     </footer>
 
     <!-- On Going -->
-    <div id="on-going" onclick="closeOnGOing()">
+    <div id="on-going" onclick="closeOnGoing()">
       <div class="full-screen">
         <div class="exit">
-          <img width="50px" src="Assets/img/Icon exit.png" alt="" />
+          <img src="Assets/img/Icon exit.png" alt="" />
         </div>
         <div class="going">Still On Going...</div>
+      </div>
+    </div>
+
+    <!-- Property Slider -->
+    <div id="property-modal">
+      <div class="full-screen">
+        <div class="exit">
+          <img onclick="closeSlider()" src="Assets/img/Icon exit.png" alt="" />
+        </div>
+        <div class="slider">
+          <div class="card-fitur me-3 position-relative">
+            <img id="slide" src="" alt="property pictures" />
+            <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-center w-100"
+              >
+                <h5>Kamar Tidur</h5>
+                <span>Rumah minimalist Type-A2</span>
+                <h6>IDR.200jt</h6>
+                <button>Lihat Rumah</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="button-arrow-left position-absolute start-0 top-50 translate-middle-y"
+            onclick="changeImgLeft()"
+          >
+            <img src="Assets/img/Left Arrow lg.png" alt="" />
+          </button>
+          <button
+            class="button-arrow-right position-absolute end-0 top-50 translate-middle-y"
+            onclick="changeImgRight()"
+          >
+            <img src="Assets/img/Right Arrow lg.png" alt="" />
+          </button>
+        </div>
       </div>
     </div>
 

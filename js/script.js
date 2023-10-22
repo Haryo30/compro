@@ -50,6 +50,13 @@ let i = 0;
 const slide = document.getElementById("slide");
 slide.src = img[i];
 function changeImgRight() {
+  // slide.style.transform = "translateX(-1000px)";
+  // slide.style.opacity = "0";
+  // slide.style.transition = "all 1s ease-in";
+  // setTimeout(() => {
+  // slide.style.transform = "translateX(0px)";
+  // slide.style.opacity = "1";
+  // }, 2000);
   if (i < img.length - 1) {
     i++;
   } else {
@@ -58,6 +65,13 @@ function changeImgRight() {
   slide.src = img[i];
 }
 function changeImgLeft() {
+  // slide.style.transform = "translateX(1000px)";
+  // slide.style.opacity = "0";
+  // slide.style.transition = "all 1s ease-in";
+  // setTimeout(() => {
+  //   slide.style.transform = "translateX(0px)";
+  // slide.style.opacity = "1";
+  // }, 2000);
   if (i == 0) {
     i = img.length - 1;
   } else {

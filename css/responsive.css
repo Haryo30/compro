@@ -74,6 +74,10 @@
     margin: 15px 0;
   }
 
+  .full-screen {
+    width: 100%;
+  }
+
   .going {
     font-size: 25px;
   }

@@ -79,3 +79,39 @@ function changeImgLeft() {
   }
   slide.src = img[i];
 }
+
+// Swiper Slides
+const swiper = document.getElementById("swiper-slide");
+const div = swiper.querySelector(".card-fitur");
+const items = swiper.querySelectorAll(".card-fitur").length;
+const sliderWidth = div.offsetWidth;
+let count = 1;
+
+window.addEventListener("resize", function () {
+  sliderWidth = div.offsetWidth;
+});
+
+function prevSlide() {
+  if (count > 1) {
+    count--;
+    swiper.style.left = "-" + (count - 1) * sliderWidth + "px";
+  } else {
+    count = items;
+    swiper.style.left = "-" + (count - 1) * sliderWidth + "px";
+  }
+  console.log(count);
+}
+
+function nextSlide() {
+  if (count < 1) {
+    count = 1;
+  }
+  if (count < items) {
+    swiper.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  } else if (count === items) {
+    swiper.style.left = "0px";
+    count = 1;
+  }
+  console.log(count);
+}

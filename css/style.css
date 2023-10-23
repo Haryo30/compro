@@ -42,7 +42,7 @@ body {
   position: absolute;
   top: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 95%;
   z-index: 20;
@@ -86,6 +86,54 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+.card-slide {
+  width: 50%;
+  height: 100%;
+}
+
+.card-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-slide h5 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.card-slide span {
+  color: #fff;
+  font-size: 14px;
+}
+
+.card-slide h6 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-slide button {
+  background-color: var(--pr-color);
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-slide .overlay {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.card-slide .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 /* Narbar Style */
@@ -431,53 +479,11 @@ h2 {
   font-size: 500;
 }
 
-.card-slide {
-  width: 50%;
-  height: 100%;
+#swiper-slide {
+  position: relative;
+  transition: all 750ms ease;
 }
 
-.card-slide img {
-  width: 100%;
-  height: 100%;
-}
-
-.card-slide h5 {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.card-slide span {
-  color: #fff;
-  font-size: 14px;
-}
-
-.card-slide h6 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.card-slide button {
-  background-color: var(--pr-color);
-  color: #fff;
-  border: none;
-  width: 150px;
-  height: 45px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.card-slide .overlay {
-  background-color: rgba(0, 0, 0, 0);
-  opacity: 0;
-  transition: all ease-in-out 1s;
-}
-
-.card-slide .overlay:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-}
 .card-fitur h5 {
   color: #fff;
   font-size: 36px;

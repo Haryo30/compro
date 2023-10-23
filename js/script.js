@@ -84,7 +84,7 @@ function changeImgLeft() {
 const swiper = document.getElementById("swiper-slide");
 const div = swiper.querySelector(".card-fitur");
 const items = swiper.querySelectorAll(".card-fitur").length;
-const sliderWidth = div.offsetWidth;
+let sliderWidth = div.offsetWidth;
 let count = 1;
 
 window.addEventListener("resize", function () {
